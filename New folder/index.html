@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="img/logos/final/PNG.png">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="Viewlar-contact-form/style.css" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="Viewlar-contact-form/img/Untitled.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Contact US!</h3>
+          <p class="text">
+            We would like to hear from you!
+            Please use the contact form
+             to send us a message.
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <img src="Viewlar-contact-form/img/mine/icons8-google-maps-48.png" class="icon" alt="" />
+              <p>La Ville Haute , Kenitra</p>
+            </div>
+            <div class="information">
+              <img src="Viewlar-contact-form/img/mine/icons8-mail-48.png" class="icon" alt="" />
+              <a href="mailto:contact@viewlar.com">contact@viewlar.com</a>
+              <!-- <p>contact@viewlar.com</p> -->
+            </div>
+            <div class="information">
+              <img src="Viewlar-contact-form/img/mine/icons8-phone-call-64.png" class="icon" alt="" />
+              <a href="tel:+212637146471">+212 637-146-471</a>
+              <!-- <p>+212 637-146-471</p> -->
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us:</p>
+            <div class="social-icons">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form onsubmit="redirectToFile(event)" action="https://formsubmit.co/f92141c98e1c30e7bdf791bb6e5b9c69" method="POST" action="index.html" autocomplete="off">
+
+                  <!------------------------------------ Honeypot  ---------------------------------------->
+
+<input type="text" name="_honey" style="display: none;">
+
+
+
+
+                  <!------------------------------------ Remove Captcha  ---------------------------------------->
+
+
+
+                  <input type="hidden" name="_captcha" value="false">
+
+                  <!------------------------------------ Remove Captcha and return to home page ---------------------------------------->
+
+                  <input type="hidden" name="_next" value="success-form.html">
+
+
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input id="name" type="text" name="name" class="input" / required>
+              <label for="">Username</label>
+              <span>Username</span>
+
+            </div>
+            <div class="input-container">
+              <input id="email" type="email" name="email" class="input" / >
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input id="phone" type="tel" name="phone" class="input" / required>
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea id="message" name="message" class="input" required></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input id="but" type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
